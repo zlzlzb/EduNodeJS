@@ -1,8 +1,0 @@
-//var i = 100;
-(function(){}
-
-i=100;
-console.log("a.js",i);
-
-)();
-

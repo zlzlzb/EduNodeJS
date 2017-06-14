@@ -1,6 +1,0 @@
- divide=require("./divide.js");
- minus=require("./minus.js");
- plus=require("./plus.js");
- multiply=require("./multiply.js");
-console.log(global);
-module.exports={divide,minus,plus,multiply};

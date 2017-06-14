@@ -1,6 +1,0 @@
-var fs = require("fs");
-
-var input = fs.createReadStream('./text.txt');
-input.on('data',function(chunk){
-	console.log(chunk);
-});

@@ -1,5 +1,0 @@
-INDEX VERSION 1.3+D:\nodeEdu\workspace\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
-96397850.index
-2277357373.index
-2818620790.index
-2781705851.index

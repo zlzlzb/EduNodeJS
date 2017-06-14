@@ -1,5 +1,0 @@
-var fs = require('fs');
-
-var out = fs.createReadStream('./out.txt');
-
-process.stdout.pipe(out);

@@ -1,6 +1,0 @@
-var os = require('os');
-var module1 = require("../module1.js")
-console.log(os.hostname());
-console.log(os.type());
-
-module1.fn();

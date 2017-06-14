@@ -1,0 +1,25 @@
+var net = require('net');
+
+var socket = net.connect({host:'127.0.0.1',port:8888});
+socket.on('connect',function(){
+	
+	
+});
+
+socket.on('data',function(){
+	
+});
+
+socket.on('end',function(){
+	
+});
+
+socket.on('close',function(){
+	
+});
+
+socket.on('error',function(){
+	
+});
+
+

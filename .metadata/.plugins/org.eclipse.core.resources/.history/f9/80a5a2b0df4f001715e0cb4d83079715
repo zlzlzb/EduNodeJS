@@ -1,0 +1,5 @@
+process.stdout.write("insert your name:");
+process.stdin.on("data",function(chunk)
+{
+		console.log(chunk);
+});

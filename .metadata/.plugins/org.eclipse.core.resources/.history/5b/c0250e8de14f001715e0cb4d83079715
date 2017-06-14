@@ -1,0 +1,10 @@
+var event=require('events');
+
+var emitter = new event.EventEmitter();
+
+emitter.on('custom',function(){
+	
+		console.log('event occurred');
+});
+
+emitter.emit('custom');

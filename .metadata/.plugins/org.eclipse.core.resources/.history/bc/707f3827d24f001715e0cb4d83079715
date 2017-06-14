@@ -1,0 +1,4 @@
+var divide=require("./divide.js");
+var minus=require("./minus.js");
+var plus=require("./plus.js");
+var multiply=require("./multiply.js");

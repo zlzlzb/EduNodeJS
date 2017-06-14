@@ -1,0 +1,11 @@
+var http=require('http');
+var server = http.createServer(function(request,response){
+	
+	console.log('request, url : %s, method:%s',request.url,request.method);
+	console.dir(request);
+});
+
+
+server.listen(8888,function(){
+	console.log('listening');
+});

@@ -1,0 +1,6 @@
+function callback(){
+	
+	console.log("hello");
+}
+
+var timer = setInterval(callback,3000);

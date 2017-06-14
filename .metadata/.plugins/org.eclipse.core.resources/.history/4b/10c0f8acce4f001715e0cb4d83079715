@@ -1,0 +1,5 @@
+console.log("module2 loading..");
+exports.fn2 = function()
+{
+	console.log("this is module2.index fn2()...");
+}

@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Index HTML</title>
+</head>
+<body>
+	<h1>Index.html</h1>
+	<p>This is index page</p>
+	<a href="first.html">Firs tPage</a>
+</body>
+</html>

@@ -1,0 +1,14 @@
+var fs = require('fs');
+
+var data = "Hello world";
+
+fs.writeFile('text.txt',data,'utf-8',function(error){
+	
+	if(error)
+		console.log("file write Error : ",error);
+	
+	else
+		console.log("file write success");
+	
+});
+

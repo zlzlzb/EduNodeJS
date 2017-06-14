@@ -1,0 +1,22 @@
+var readline = require('readline');
+var fs = require('fs');
+
+var filename = process.argv[2];
+
+var rl = readline.createInterface({
+		input:fs.createReadStream(process.stdin)
+});
+
+
+var writer = fs.createWriteStream(filename);
+
+rl.on('line',function(line){
+	
+	if(line != 'exit')
+		writer.write(line);
+	else
+		process.exit(1);
+	
+		
+});	
+

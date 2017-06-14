@@ -1,0 +1,2 @@
+stderr : console.err
+stderr : console.warn

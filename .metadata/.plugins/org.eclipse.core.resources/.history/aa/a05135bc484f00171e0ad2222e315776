@@ -1,0 +1,9 @@
+console.log("calc.js is loading...");
+
+function plus(i,j)
+{
+	return i+j;
+}
+
+//exports.plus = plus;
+exports = plus;

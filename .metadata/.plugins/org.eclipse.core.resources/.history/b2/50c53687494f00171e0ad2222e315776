@@ -1,0 +1,9 @@
+//var calc = require("./calc.js");
+
+//var r = calc.plus(10,20);
+
+
+require("./calc.js");
+var r = m(10,20);
+
+console.log("result :",r);

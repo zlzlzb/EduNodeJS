@@ -1,0 +1,19 @@
+var fs = require('fs');
+
+console.log("stdout : console.log");
+console.error("stderr : console.err");
+
+console.info("stdout : console.info");
+console.warn("stderr : console.warn");
+
+var logger = new console.Console(
+		fs.createWriteStream("./log.txt"),
+		fs.createWriteStream("./err.txt")
+);
+
+logger.log("this is log");
+logger.error("this is err");
+logger.info("this is info");
+logger.warn("this is warn");
+
+console.trace('trace');

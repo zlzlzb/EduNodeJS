@@ -1,0 +1,3 @@
+//var i = 100;
+lel i=100;
+console.log("a.js",i);

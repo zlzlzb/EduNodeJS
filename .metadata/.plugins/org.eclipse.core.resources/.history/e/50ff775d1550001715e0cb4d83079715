@@ -1,0 +1,14 @@
+var net = require('net');
+var socket = net.connect({host:'www.google.com',port:80});
+
+socket.on('connect',function(){
+	console.log('connected.');
+	
+	socket.write('GET /index.html HTTPl/1.1\r\n');
+	socket.write('user-agent:mozilla 5.0\r\n');
+	socket.end('\r\n');
+});
+
+socket.on('data',function(data){
+	console.log(data.toString());
+});

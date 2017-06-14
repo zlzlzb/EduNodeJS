@@ -1,0 +1,12 @@
+function plus(a,b,cb)
+{
+	var r = a+b;
+	cb(r);
+}
+
+plus(10,20,function(r){
+	
+	console.log(r);	
+	
+});
+

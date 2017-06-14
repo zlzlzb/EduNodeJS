@@ -1,0 +1,18 @@
+var net = require('net');
+
+var server = net.createServer(function(socket){
+	
+	console.log('client connected.');
+	socket.write("HTTP/1.1 200 OK\r\n");
+	socket.write("Content-Type:text/html\r\n");
+	socket.write("\r\n");
+	socket.write("<html><body><H1>Welcome</H1></body></html>");
+	socket.end();
+	socket.close();
+			
+	
+});
+
+server.listen(8888,function(){
+	console.log("server is running on 8888");	
+});

@@ -1,0 +1,14 @@
+var divide=require("./divide.js");
+var minus=require("./minus.js");
+var plus=require("./plus.js");
+var multiply=require("./multiply.js");
+
+exports.fn2 = function()
+{
+	console.log("this is module2.index fn2()...");
+	fn3();
+}
+if(require.main==module)
+{
+	exports.fn2();
+}

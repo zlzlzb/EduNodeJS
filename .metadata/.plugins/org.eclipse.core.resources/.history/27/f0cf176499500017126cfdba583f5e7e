@@ -1,0 +1,7 @@
+var net = require('net');
+
+var server = net.createServer();
+
+server.listen(8888,function(){
+	console.log("server is running on 8888");	
+});

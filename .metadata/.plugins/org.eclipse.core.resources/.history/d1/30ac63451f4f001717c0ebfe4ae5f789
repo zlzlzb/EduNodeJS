@@ -1,0 +1,6 @@
+var i = 10;
+j = 100;
+
+
+console.lge(i,j);
+console.lgo(global.i,global.j);

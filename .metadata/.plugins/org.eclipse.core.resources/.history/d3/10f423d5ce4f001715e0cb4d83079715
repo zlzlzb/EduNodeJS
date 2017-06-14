@@ -1,0 +1,4 @@
+exports.fn3=function(){
+	
+	console.log("this is module2.fn3().");
+}

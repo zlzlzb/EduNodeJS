@@ -1,0 +1,19 @@
+var http=require('http');
+
+var fs=require('fs');
+
+http.createServer(function(req,res){
+	
+	if(req.url==='/')
+	{
+		fs.readFile(__dirname+'/public/index.html',function(data){
+			
+			res.writeHead(200,{'Content-type':'text/html'});
+			res.end(data.toString());
+		});
+	}
+	
+})
+.listen(8888,function(){
+	console.log("sever is reunning on 8888")	
+});

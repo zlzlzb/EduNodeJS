@@ -1,0 +1,6 @@
+console.log("stdout : console.log");
+console.error("stderr : console.err");
+
+console.info("stdout : console.info");
+console.warn("stderr : console.warn");
+

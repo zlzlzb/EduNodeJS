@@ -1,0 +1,4 @@
+function plus(i,j)
+{
+	return i+j;
+}

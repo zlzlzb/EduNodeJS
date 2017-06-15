@@ -8,7 +8,7 @@ var app = express();
 app.use(express.static(__dirname + '/public'));
 app.use(bodyParser.urlencoded({extended:false}));
 var conn = mysql.createConnection({
-	host : '172.30.1.49',
+	host : '127.0.0.1',
 	user : 'root',
 	password : 'admin',
 	database : 'test'
@@ -82,7 +82,7 @@ app.post('/save/:id', function(req, res, next){
 app.get('/delete/:id', function(req, res, next){
 	var id = req.params.id;
 	conn.query('DELETE FROM board WHERE _id=?', [id], function(err, rs, field){
-		if(!err){
+		if(!err){ 
 			res.redirect('/');
 		}else{
 			next(err, req, res);

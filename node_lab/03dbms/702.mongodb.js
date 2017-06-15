@@ -2,7 +2,7 @@
 
 
 var mongojs = require('mongojs');
-var db = mongojs('172.30.1.32/test', ['board']);
+var db = mongojs('127.0.0.1/test', ['board']);
 db.on('error', function(err){
    console.log(err);
 });

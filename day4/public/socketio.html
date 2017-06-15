@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+
+
+<script type="text/javascript" src="/socket.io/socket.io.js"></script>
+<script type="text/javascript">
+
+//var socket = io.connect('ws://localhost:8888');
+var socket = io.connect();
+socket.on('anna',function(data){
+	alert(data);	
+});
+
+function send()
+{
+	socket.emit('elsa',{msg:"do you wanna build a snowman?"});
+}
+
+</script>
+</head>
+<body>
+
+	<button onclick="send()">send</button>
+	
+</body>
+</html>
